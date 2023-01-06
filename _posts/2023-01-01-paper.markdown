@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "Example Post Formatting"
+date:   2014-12-15
+description: This is a post description for meta purposes. This is also the excerpt of the article that shows up on the index/home page. Change this in the post YAML.
+---
+<p style="text-align:center;font-size: medium;">Jihyun Kim&#42;&#185;, Seong-Hun Jeong&#42;	&#178;, Kyeongbo Kong&#42;	&#178;, and Suk-Ju Kang&#185;<br>
+&#185;Sogang University, &#123;jhkim5950, sjkang&#125;&#64;sogang.ac.kr<br>
+&#178;Pukyong National University, tlqwkrk915@pukyong.ac.kr, kbkong@pknu.ac.kr
+</p>
+
+
+Code is available <a href = "https://github.com/Jihyun0510/caption_guided_extensive_painting">here </a>. Thank you
+
+### Abstract
+
+<p style="text-align:center;font-size: medium;">Fig.1 Rich information provided by language hints</p>
+
+<img src="{{'/assets/img/caption_added_fig6.jpg'}}" alt="">
+
+Image completion is a research field which aims to generate visual contents for unknown regions of an image. Image outpainting and wide-range image blending, which we refer to as extensive painting, are considered challenging because compared to the large unknown regions, relatively less context is provided. Some recent studies have tried to decrease the complexity of extensive painting by generating image hints for the missing regions. In this paper, we introduce a novel modality of hints, the natural language. Moreover, we propose a Captioning-based Extensive Painting (CEP) module, which combines models for two different multi-modal tasks: image captioning and text-guided image completion. In order to generate appropriate captions for masked images, the image captioning model is optimized using self-critical sequence training (SCST) method with random masks. The biggest benefit of our methodology is the accessibility to well-designed image captioning and text-guided image manipulation models such as OFA and GLIDE without the need for additional architectural changes. In evaluation, our model demonstrates remarkable performance even with complicated image datasets both quantitatively and qualitatively.
+
+
+<p style="text-align:center;font-size: medium;">Fig.2 An overall framework of CEP module</p>
+
+<img src="{{'/assets/img/overall_framework2.png'}}" alt="">
+
+### Experimental Results
+
+<p style="text-align:center;font-size: big; bold">Quantitative results</p>
+
+<img src="{{'/assets/img/table.jpg'}}" alt="">
+
+<b>Image Outpainting</b> The results for image outpainting task on Landscape, Landmarks, and AmsterTime datasets are summarized in Table 1. Our CEP module outperforms all baselines, including the state-of-the-art image completion model Palette. Moreover, while the Palette model scores particularly high in Landmarks dataset, in which the number of training images is large, our module constantly achieves high scores in all datasets. 
+
+<b>Wide-Range Image Blending</b> The quantitative results are shown in Table 2. In all datasets except for Scenery dataset, our method beats every baseline, even the BRIDGE model, which was particularly designed for this task.
+
+
+<p style="text-align:center;font-size: big; bold">Qualitative results</p>
+
+<img src="{{'/assets/img/caption_added_fig3.jpg'}}" alt="">
+<img src="{{'/assets/img/caption_added_fig4.jpg'}}" alt="">
+
+
+<!-- <p class="intro"><span class="dropcap">C</span>urabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Vestibulum id ligula porta felis euismod semper. Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur.</p>
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+<blockquote>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Curabitur blandit tempus porttitor. Donec sed odio dui. Cras mattis consectetur purus sit amet fermentum.</blockquote>
+
+Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+## Unordered List
+* List Item
+* Longer List Item
+  * Nested List Item
+  * Nested Item
+* List Item
+
+## Ordered List
+1. List Item
+2. Longer List Item
+    1. Nested OL Item
+    2. Another Nested Item
+3. List Item
+
+## Definition List
+<dl>
+  <dt>Coffee</dt>
+  <dd>Black hot drink</dd>
+  <dt>Milk</dt>
+  <dd>White cold drink</dd>
+</dl>
+
+Donec id elit non mi porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas faucibus mollis interdum. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+
+## Table
+
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+Cras justo odio, dapibus ac facilisis in, egestas eget quam. Curabitur blandit tempus porttitor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
+
+Maecenas faucibus mollis interdum. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Etiam porta sem malesuada magna mollis euismod. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.
+
+Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+
+Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. -->
